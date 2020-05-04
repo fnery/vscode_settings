@@ -6,7 +6,7 @@ My custom [VS Code](https://code.visualstudio.com/) settings. For reference my O
 
 ## Why not using the Settings Sync [extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)?
 
-I have tried it (see gist [here](https://gist.github.com/fnery/0b46b91f7daf8c7e7fbcce8e09a031bf), and nice [blog post](https://itnext.io/settings-sync-with-vs-code-c3d4f126989) to it up). However, extensions installed only on WSL are not backed up with this method. Issue [here](https://github.com/shanalikhan/code-settings-sync/issues/979). So for now** I'll maintain this repo.
+I have tried it (see gist [here](https://gist.github.com/fnery/0b46b91f7daf8c7e7fbcce8e09a031bf), and nice [blog post](https://itnext.io/settings-sync-with-vs-code-c3d4f126989) to set it up). However, extensions installed only on WSL are not backed up with this method. Issue [here](https://github.com/shanalikhan/code-settings-sync/issues/979). So for now** I'll maintain this repo.
 
 ## Extensions
 
