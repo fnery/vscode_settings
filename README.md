@@ -1,6 +1,6 @@
 # vscode_settings
 
-My custom [VS Code](https://code.visualstudio.com/) settings. For reference my OS is Windows 10 but I develop mostly on Ubuntu [via WSL](https://docs.microsoft.com/en-us/windows/wsl/faq).
+My custom [VS Code](https://code.visualstudio.com/) settings. For reference my OS is Windows 10 but I develop mostly on Ubuntu via [WSL](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
 :warning: **This might become obsolete when [this](https://code.visualstudio.com/docs/editor/settings-sync) goes stable.
 
