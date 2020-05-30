@@ -58,6 +58,8 @@
 
     "editor.foldingStrategy": "indentation",
 
+    "diffEditor.ignoreTrimWhitespace": false,
+
     // #########################
     // EDITING (extension-based)
     // #########################
@@ -74,9 +76,10 @@
     // CODING
     // ######
 
-    // Ensure using WSL
+    // Make WSL default shell (use shell launcher extension to launch others)
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     "terminal.integrated.inheritEnv": true,
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 
     // Python interactive (jupyter support) options
     "python.dataScience.sendSelectionToInteractiveWindow": true,

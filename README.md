@@ -24,6 +24,7 @@ Installed globally:
     shardulm94.trailing-spaces@0.3.1
     streetsidesoftware.code-spell-checker@1.8.0
     tomoki1207.vscode-input-sequence@0.2.0
+    Tyriar.shell-launcher@0.4.1
     wmaurer.change-case@1.0.0
     wmaurer.vscode-jumpy@0.3.1
     yzhang.markdown-all-in-one@2.8.0

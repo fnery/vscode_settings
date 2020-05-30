@@ -129,7 +129,6 @@
         "key": "ctrl+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
-
     {   // Clear terminal
         "key": "ctrl+l",
         "command": "workbench.action.terminal.clear",
