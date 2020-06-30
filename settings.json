@@ -7,30 +7,52 @@
     // APPEARANCE
     // ##########
 
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 2,
+
+    // Hide horizontal scrollbar and ensure vertical always visible
+    // (unofficial setting https://github.com/microsoft/vscode/issues/98632)
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "visible",
 
     // Vertical line to limit number of chars per line (pep8 limit: 79)
     "editor.rulers": [
-        { "column": 79, "color": "#333333" },
+        { "column": 79, "color": "#222222" },
     ],
 
     // DOM rendering ofter faster than 'canvas'
     "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
 
     // Minimal number of visible leading and trailing lines surrounding cursor
 	"editor.cursorSurroundingLines": 0,
 
     // Zen-mode settings
-    "zenMode.centerLayout": false,
+    "zenMode.centerLayout": true,
     "zenMode.hideLineNumbers": false,
 
-    // Make color of status bar match dark theme
+    // Customise colors
     "workbench.colorCustomizations": {
+        "editorGroupHeader.tabsBackground": "#222222",
+        "statusBarItem.remoteBackground": "#222222",
+        "titleBar.activeBackground": "#222222",
+        "titleBar.border": "#222222",
+        "editor.background": "#222222",
+        "editor.selectionBackground": "#454545",
+        "activityBar.background": "#222222",
+        "activityBar.border": "#222222",
         "statusBar.background" : "#222222",
         "statusBar.noFolderBackground" : "#212121",
         "statusBar.debuggingBackground": "#263238",
         "peekViewEditor.matchHighlightBackground": "#263238",
-        "editorRuler.foreground": "#8b8b8b1e"
+        "editor.lineHighlightBackground": "#292626",
+        "editor.lineHighlightBorder": "#292929",
+        "scrollbar.shadow": "#212121",
+        "scrollbarSlider.activeBackground": "#4e4e4e48",
+        "scrollbarSlider.background": "#4e4e4e48",
+        "scrollbarSlider.hoverBackground": "#8b8b8b1e",
+        "tab.inactiveBackground": "#222222",
+        "tab.border": "#222222",
     },
 
     // Control whether vertical indentation lines are shown or not
@@ -40,8 +62,8 @@
     "editor.renderWhitespace": "selection",
 
     // Misc, self-explanatory settings
-    "editor.minimap.enabled": true,
-    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
     "window.menuBarVisibility": "toggle",
     "search.showLineNumbers": true,
 
@@ -57,8 +79,6 @@
     "editor.detectIndentation": false, // Ensure above works consistently
 
     "editor.foldingStrategy": "indentation",
-
-    "diffEditor.ignoreTrimWhitespace": false,
 
     // #########################
     // EDITING (extension-based)
@@ -76,16 +96,18 @@
     // CODING
     // ######
 
-    // Make WSL default shell (use shell launcher extension to launch others)
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    // Shell and python path
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.inheritEnv": true,
-    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+
+    // "python.pythonPath": "/home/fnery/anaconda3/envs/base2ac/bin/python",
+    "python.pythonPath": "d:\\fnery\\github\\forks\\disimpyve\\Scripts\\python.exe",
 
     // Python interactive (jupyter support) options
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "python.dataScience.askForKernelRestart": false,
 	"python.dataScience.colorizeInputBox": false, // prompt color match theme
-    "python.pythonPath": "/home/fnery/anaconda3/envs/base2ac/bin/python",
     // "python.dataScience.textOutputLimit": 0, // to avoid truncating output
     "python.dataScience.textOutputLimit": 1000,
 
@@ -99,5 +121,11 @@
     // #######
 
     "sync.gist": "0b46b91f7daf8c7e7fbcce8e09a031bf",
+
+    // "cSpell.language": "en",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "cSpell.enableFiletypes": [
+        "!python"
+    ],
 
 }
