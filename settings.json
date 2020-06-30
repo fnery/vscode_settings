@@ -7,7 +7,7 @@
     // APPEARANCE
     // ##########
 
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
 
     // Hide horizontal scrollbar and ensure vertical always visible
     // (unofficial setting https://github.com/microsoft/vscode/issues/98632)
@@ -16,7 +16,7 @@
 
     // Vertical line to limit number of chars per line (pep8 limit: 79)
     "editor.rulers": [
-        { "column": 79, "color": "#222222" },
+        { "column": 79, "color": "#101010" },
     ],
 
     // DOM rendering ofter faster than 'canvas'
@@ -33,26 +33,27 @@
 
     // Customise colors
     "workbench.colorCustomizations": {
-        "editorGroupHeader.tabsBackground": "#222222",
-        "statusBarItem.remoteBackground": "#222222",
-        "titleBar.activeBackground": "#222222",
-        "titleBar.border": "#222222",
-        "editor.background": "#222222",
+        "editorGroupHeader.tabsBackground": "#101010",
+        "statusBarItem.remoteBackground": "#101010",
+        "titleBar.activeBackground": "#101010",
+        "titleBar.border": "#101010",
+        "sideBar.background": "#101010",
+        "editor.background": "#101010",
         "editor.selectionBackground": "#454545",
-        "activityBar.background": "#222222",
-        "activityBar.border": "#222222",
-        "statusBar.background" : "#222222",
-        "statusBar.noFolderBackground" : "#212121",
+        "activityBar.background": "#101010",
+        "activityBar.border": "#101010",
+        "statusBar.background" : "#101010",
+        "statusBar.noFolderBackground" : "#101010",
         "statusBar.debuggingBackground": "#263238",
         "peekViewEditor.matchHighlightBackground": "#263238",
         "editor.lineHighlightBackground": "#292626",
         "editor.lineHighlightBorder": "#292929",
-        "scrollbar.shadow": "#212121",
+        "scrollbar.shadow": "#101010",
         "scrollbarSlider.activeBackground": "#4e4e4e48",
         "scrollbarSlider.background": "#4e4e4e48",
         "scrollbarSlider.hoverBackground": "#8b8b8b1e",
-        "tab.inactiveBackground": "#222222",
-        "tab.border": "#222222",
+        "tab.inactiveBackground": "#101010",
+        "tab.border": "#101010",
     },
 
     // Control whether vertical indentation lines are shown or not
@@ -80,6 +81,14 @@
 
     "editor.foldingStrategy": "indentation",
 
+    // Remove "Comments are not permitted in JSON.(521)" warning
+    // https://stackoverflow.com/questions/47834825/
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+
+    "diffEditor.ignoreTrimWhitespace": false,
+
     // #########################
     // EDITING (extension-based)
     // #########################
@@ -88,6 +97,10 @@
     "[python]": {
         "editor.formatOnSave": false
     },
+
+    "cSpell.enableFiletypes": [
+        "!python"
+    ],
 
     // https://stackoverflow.com/a/43799604
     "markdown.enableExperimentalExtensionApi": true,
@@ -121,11 +134,5 @@
     // #######
 
     "sync.gist": "0b46b91f7daf8c7e7fbcce8e09a031bf",
-
-    // "cSpell.language": "en",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "cSpell.enableFiletypes": [
-        "!python"
-    ],
 
 }
