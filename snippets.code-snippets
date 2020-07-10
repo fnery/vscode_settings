@@ -18,7 +18,7 @@
         "body": [
             "[_(source)_](${1:link})",
             "",
-			"$0"
+            "$0"
         ],
         "description": "Link to source for arbitraty content (e.g. quote)"
     }
