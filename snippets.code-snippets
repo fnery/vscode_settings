@@ -1,0 +1,25 @@
+{
+    // Global snippets
+    // @fnery
+
+    "Image with legend": {
+        "scope": "markdown",
+        "prefix": ["image-legend"],
+        "body": [
+            "![alt](${1:location})",
+            "*${2:legend}*",
+        ],
+        "description": "Image with legend"
+    },
+
+    "Source": {
+        "scope": "markdown",
+        "prefix": ["source"],
+        "body": [
+            "[_(source)_](${1:link})",
+            "",
+			"$0"
+        ],
+        "description": "Link to source for arbitraty content (e.g. quote)"
+    }
+}
