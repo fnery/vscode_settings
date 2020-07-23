@@ -81,6 +81,10 @@
         "command": "editor.action.changeAll",
         "when": "editorTextFocus && !editorReadonly"
     },
+        // Focus on side bar
+    { "key": "ctrl+0",
+      "command": "workbench.action.focusSideBar"
+    },
 
     // #########################
     // EDITING (extension-based)
@@ -133,6 +137,11 @@
         "key": "ctrl+l",
         "command": "workbench.action.terminal.clear",
         "when": "terminalFocus"
+    },
+    {   // Focus on outline view
+        "key": "ctrl+alt+o",
+        "command": "outline.focus",
+        "when": "editorTextFocus"
     },
 
     // #########
