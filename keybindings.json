@@ -139,7 +139,7 @@
         "when": "terminalFocus"
     },
     {   // Focus on outline view
-        "key": "ctrl+alt+o",
+        "key": "alt+shift+o",
         "command": "outline.focus",
         "when": "editorTextFocus"
     },
