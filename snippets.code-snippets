@@ -21,5 +21,14 @@
             "$0"
         ],
         "description": "Link to source for arbitraty content (e.g. quote)"
+    },
+
+    "Email": {
+        "scope": "markdown",
+        "prefix": ["email"],
+        "body": [
+            "[email](rfc822msgid:${1:<CANvaiF...aiFvQ>})",
+        ],
+        "description": "Link to email MessageID (RFC 822 specification)"
     }
 }
